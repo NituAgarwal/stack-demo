@@ -8,7 +8,7 @@ import java.util.Objects;
 
 
 @SpringBootTest
-public class StackTests {
+public class StackTest {
     private Stack stack;
 
     @BeforeEach
