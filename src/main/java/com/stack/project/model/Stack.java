@@ -7,8 +7,8 @@ public class Stack<T> {
 
     public Stack(int capacity){
         this.capacity = capacity;
+        // Initialize a dummy head
         head = new SingleLinkedList();
-        head.next = null;
         this.size = 0;
     }
 
@@ -45,7 +45,6 @@ public class Stack<T> {
     }
 
     public T peek(){
-        System.out.println(head.value);
         return head.value == null ? null: (T)head.value;
     }
 

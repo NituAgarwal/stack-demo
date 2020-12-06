@@ -28,7 +28,7 @@ public class StackController<T> {
     @DeleteMapping("/pop")
     public T pop(){
         if(this.stack.getSize() == 0){
-            return (T) ("Stack is Empty.");
+            return (T) ("Stack is Empty");
         }
         return (T)this.stack.pop();
     }
